@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><!-- Broschürzoom -->
+    <title>F&ouml;rderverein Barockgarten Großsedlitz</title>
+    <meta name="author" content="&Eacute;mile Jeremias Ruff">        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <meta charset="UTF-8">
+    
+    <style>
+        main > div {
+            display: flex;
+            gap: 25px;
+        }
+        
+        main > div img {
+            width: 40%;
+            height: auto;
+        }
+        
+        main > div:nth-of-type(2) {
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            main > div {
+                display: block;
+            }
+    
+            main > div img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logoDiv"></div>
+        <img id="navToggle" src="b/menu.png" alt="Menuesymbol mit drei Strichen">
+        <nav>
+            <ul><li><a href="t/aktuelles">Aktuelles</a></li>
+                <li><a href="t/ueber">&Uuml;ber uns</a></li>
+                <li><a href="t/foerdermitglied-werden">F&ouml;rdermitglied werden</a></li></ul>
+        </nav>
+    </header>
+    <div id="navLightbox"></div>
+    <img id="citrus" src="b/citrus.png" alt="Zeichnung einer Zitrusfrucht">
+
+    <main>
+        <h1>Barockgarten Großsedlitz &nbsp;-&nbsp; F&ouml;rderverein</h1>  
+
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <div>
+            <img src="b/bild1.png">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor 
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum 
+            dolor sit amet.</p>
+        </div>    
+
+        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing 
+        elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing 
+        elitr,  At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et 
+        invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut 
+        vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing 
+        elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+        <div id="img2-div"></div>
+    </main>
+    <img id="citrus2" src="b/citrus2.png">
+    <img id="img2" src="b/bild2.jpg">
+
+    <footer>
+        <ul><li><a href="t/rechtliches">Rechtliches</a></li>
+            <li>|</li>
+            <li><a href="t/kontakt">Kontakt</a></li>
+        </ul>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

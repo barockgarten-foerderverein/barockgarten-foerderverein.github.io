@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>F&ouml;rderverein | Aktuelles</title>
+    <meta name="author" content="&Eacute;mile Jeremias Ruff">        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.ico">
+
+    <link rel="stylesheet" href="../stylesheet.css" type="text/css">
+    <meta charset="UTF-8">
+
+    <style>
+        main {
+            padding: 0;
+            background-color: transparent;
+            margin-left: 0;
+        }
+
+        main > div:not(#navLightbox), h1 {
+            background-color: #fef3e8;
+            border-radius: 35px;
+            padding: 28px 35px;
+            position: static;
+            margin-top: 30px;
+            margin-left: 28vw;
+            width: 680px;
+            height: auto;
+            line-height: 1.8rem;
+        }
+
+        main > div:not(#navLightbox) {
+            font-size: 18px;
+        }
+
+        main > div:nth-of-type(1) {
+            padding: 0 0 25px 0 !important;
+            width: 750px !important;
+        }
+
+        main > div:nth-of-type(1) .bild {
+            border-radius: 35px 35px 0 0;
+            background-image: url("../b/aktuelles/yoga.jpg");
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+            width: 100%;
+            height: 370px;
+            cursor: pointer;
+            transition: background-size 0.5s linear;
+        }
+
+        main div:nth-of-type(1) .bild:hover {
+            background-size: auto 110%;
+            transition: background-size 1s linear;
+        }
+
+        main > div:nth-of-type(1) .text {
+            margin: -45px 35px 0 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        main > div:nth-of-type(1) h2 {
+            color: white;
+        }
+
+        main > div:nth-of-type(1) a::after {
+            background-color: white !important;
+        }
+
+        h1 {
+            padding: 25px 50px;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-family: Proza;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        body > div p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a id="logoDiv" href="../index" title="Zur&uuml;ck zur Startseite"></a>
+        <img id="navToggle" src="../b/menu.png" alt="Menuesymbol mit drei Strichen">
+        <nav>
+            <ul><li><a href="aktuelles">Aktuelles</a></li>
+                <li><a href="ueber">&Uuml;ber uns</a></li>
+                <li><a href="foerdermitglied-werden">F&ouml;rdermitglied werden</a></li></ul>
+        </nav>
+    </header>
+    <div id="navLightbox"></div>
+    <img id="citrus" src="../b/citrus.png" alt="Zeichnung einer Zitrusfrucht">
+
+    <main id="aktuelles">
+        <h1>Aktuelles</h1>
+
+        <div>
+            <a href="../aktuelles/yoga"><div class="bild"></div></a>
+            <div class="text">
+                <h2><a href="../aktuelles/yoga">Ein Beitrag &uuml;ber Yoga</a></h2>
+                <p>Ein Text &uuml;ber Yoga: consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                dolores et ea rebum.</p>
+            </div>
+        </div>
+
+        <div>
+            <h2><a href="../aktuelles/ueberschrift-2">Hier steht ne &Uuml;berschrift 2</a></h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
+            dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+            ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+
+        <div>
+            <h2><a>Hier steht ne &Uuml;berschrift</a></h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
+            dolores et ea rebum.</p>
+        </div>
+    </main>
+
+    <footer>
+        <ul><li><a href="t/rechtliches">Rechtliches</a></li>
+            <li>|</li>
+            <li><a href="t/kontakt">Kontakt</a></li>
+        </ul>
+    </footer>
+
+<script src="../script.js"></script>
+</body>
+
+</html>

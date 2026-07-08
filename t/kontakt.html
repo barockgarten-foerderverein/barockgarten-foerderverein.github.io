@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>F&ouml;rderverein | Kontakt</title>
+    <meta name="author" content="&Eacute;mile Jeremias Ruff">        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.ico">
+
+    <link rel="stylesheet" href="../stylesheet.css" type="text/css">
+    <meta charset="UTF-8">
+
+    <style>
+        table, table tr, table td {
+            border: none;
+        }
+
+        table tr td:nth-of-type(1) {
+            width: 30px;
+        }
+
+        table tr td:nth-of-type(2) {
+            width: 80px;
+        }
+
+        main > p:nth-of-type(2) {
+            border-top: 1px solid black;
+            margin-top: 80px;
+            padding-top: 20px;
+        }
+
+        form {
+            border-radius: 20px;
+            width: 90%;
+            margin-top: 30px;
+        }
+
+        form p {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Arial";
+        }
+
+        form span {
+            color: grey;
+            margin-bottom: 35px;
+        }
+
+        form input {
+            width: 50%;
+            margin-right: 10%;
+        }
+
+        form textarea {
+            width: 95.5%;
+            height: 30vh;
+        }
+
+        form input, form textarea {
+            border-radius: 10px;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            border: 1px solid transparent;
+            margin-bottom: 30px;
+        }
+
+        form input:hover:not(#fileNameField), form textarea:hover, form button:hover {
+            border: 1px dashed black;
+        }
+
+        form input:focus:not(#fileNameField), form textarea:focus, form button:focus {
+            border: 1px solid black;
+        }
+
+        form > div {
+            display: flex;
+            align-items: center;
+        }
+
+        #fileNameField {
+            padding-left: 10px;
+            display: none;
+            caret-color: transparent;
+            margin-right: 50px;
+            cursor: pointer;
+        }
+
+        #fileInput {
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        #fileInput:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        #fileInput::file-selector-button, form button  {
+            background-color: transparent;
+            border: 1px solid black;
+            padding: 8px 20px;
+            margin-right: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        form button {
+            font-size: 15px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        form button:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            form input, form textarea {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a id="logoDiv" href="../index" title="Zur&uuml;ck zur Startseite"></a>
+        <img id="navToggle" src="../b/menu.png" alt="Menuesymbol mit drei Strichen">
+        <nav>
+            <ul><li><a href="aktuelles">Aktuelles</a></li>
+                <li><a href="ueber">&Uuml;ber uns</a></li>
+                <li><a href="foerdermitglied-werden">F&ouml;rdermitglied werden</a></li></ul>
+        </nav>
+    </header>
+    <div id="navLightbox"></div>
+    <img id="citrus" src="../b/citrus.png" alt="Zeichnung einer Zitrusfrucht">
+
+    <main>
+        <h1>Kontakt</h1>
+        
+        <p>Haben Sie Fragen zur Arbeit des F&ouml;rdervereins oder m&ouml;chten Sie mithelfen? 
+        Dann nehmen Sie ganz einfach Kontakt auf:<br><br>
+
+        <span style="white-space: nowrap">Freundeskreis Barockgarten Großsedlitz e. V.</span><br>
+        Parkstraße 85<br>
+        01809 Heidenau<br>
+
+        <table>
+            <tr><td></td>
+                <td>Telefax: </td>
+                <td>03529 563999</td></tr>
+
+            <tr><td><img src="../b/tel.svg"> </td>
+                <td>Telefon: </td>
+                <td><a href="tel:03518027825">0351 8027825</a></td></tr>
+
+            <tr><td><img src="../b/mail.svg"> </td>
+                <td>Mail: </td>
+                <td><a href="mailto:grosssedlitz.foerdern@gmail.com">grosssedlitz.foerdern@gmail.com</a></td>
+        </table>
+
+        <p>...oder schreiben Sie uns &uuml;ber unser Kontaktformular:</p>
+
+        <p>Ihre Angaben werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. 
+        Die &Uuml;bertragung erfolgt &uuml;ber einen externen Dienst (<a 
+        target="_blank" href="https://github.com/web3forms">Web3Forms</a>, open-source), 
+        wodurch eine vollst&auml;ndige Datensicherheit nicht garantiert werden 
+        kann. Bitte &uuml;bermitteln Sie daher keine besonders sensiblen oder vertraulichen 
+        Informationen &uuml;ber dieses Formular.</p>
+        <p>Your data is handled by Web3Forms. Avoid sending highly sensitive info.</p>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="04c7a79f-b120-4246-89ec-66007d545b53">
+            <input type="hidden" name="redirect" value="http://localhost:3000/t/kontakt-erfolg">
+            <input type="hidden" name="ursprung" value="forderverein barockgarten grosssedlitz">
+
+            <p>Wie d&uuml;rfen wir Sie nennen? <span>What may we call you?</span></p>
+            <input type="text" name="name">
+
+            <p>Was ist Ihr Anliegen?* <span>What is your request?*</span></p>
+            <textarea name="message" required></textarea>
+
+            <p>Folgend k&ouml;nnen Sie uns relevante Dateien zukommen lassen.<br>
+            <span>You can send us relevant files as follows.</span></p>
+            <div><input type="text" name="uploaded_file_name" id="fileNameField" placeholder="Keine Datei ausgew&auml;hlt" readonly>
+                 <input type="file" id="fileInput"></div>
+
+            <p style="margin-bottom: -30px;">Wie k&ouml;nnen wir Sie f&uuml;r R&uuml;ckfragen erreichen?<br>
+            <span>How can we reach you for further enquiries?</span></p>
+            <input type="text" name="email">
+
+            <button type="submit">Abschicken <span>/ Submit</span></button>
+        </form>
+    </main>
+
+    <footer>
+        <ul><li><a href="rechtliches">Rechtliches</a></li>
+            <li>|</li>
+            <li><a href="kontakt">Kontakt</a></li>
+        </ul>
+    </footer>   
+
+<script src="../script.js"></script>
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
+const supabase = createClient(
+"https://euuptkidjsquvhohvicv.supabase.co",
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV1dXB0a2lkanNxdXZob2h2aWN2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUwMDk4OTksImV4cCI6MjA3MDU4NTg5OX0.O1isV0Ove_Tb1ruXqY_dlD4UdQGM174eVw9Kp_22YO4"
+);
+
+const fileInput = document.getElementById("fileInput");
+const fileNameField = document.getElementById("fileNameField");
+const fileUrlField = document.getElementById("fileUrlField");
+
+fileInput.addEventListener("change", async () => {
+     const file = fileInput.files[0];
+     if (!file) return;
+
+     const date = Date.now();
+     const filePath = `${date}-${file.name}`;
+
+     const { error } = await supabase
+     .storage
+     .from("kontaktformular")
+     .upload(filePath, file);
+
+     if (error) {
+          alert("Upload fehlgeschlagen");
+          console.error(error);
+          return;
+     }
+
+     const { data } = supabase
+     .storage
+     .from("kontaktformular")
+     .getPublicUrl(filePath);
+
+     fileNameField.style.display = "block";
+     fileNameField.value = file.name;
+     
+     if (fileUrlField) {
+          fileUrlField.value = data.publicUrl;
+     }
+});
+</script> 
+</body>
+
+</html>
